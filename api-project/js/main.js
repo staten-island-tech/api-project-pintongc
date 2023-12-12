@@ -1,4 +1,4 @@
-    const URL = `https://www.balldontlie.io/api/v1/season_averages?season=2023&player_ids[]=235&player_ids[]=236`;
+    const URL = `https://www.balldontlie.io/api/v1/season_averages?season=2023&player_ids[]=237&player_ids[]=237`;
 
     async function getData(URL){
         try {
