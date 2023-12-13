@@ -1,3 +1,5 @@
+import { DOMSelectors } from "./dom";
+
     const URL = `https://www.balldontlie.io/api/v1/season_averages?season=2023&player_ids[]=237&player_ids[]=237`;
 
     async function getData(URL){
@@ -15,4 +17,12 @@
     getData(URL)
 
     document.querySelector(".player").textContent = data.data[0].ast;
+
+
+DOMSelectors.plyrinput.addEventListener("submit", function (event) {
+    event.preventDefault();
+   DOMSelectors.plyrinput.insertAdjacentHTML(
+        "beforeend", `<div class="player">LeBron James</div>`
+    )
+})
 
