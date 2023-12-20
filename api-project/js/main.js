@@ -1,6 +1,7 @@
 import { DOMSelectors } from "./dom";
 
     const URL = `https://www.balldontlie.io/api/v1/season_averages?season=2023&player_ids[]=237&player_ids[]=237`;
+    const URL1 = `https://www.balldontlie.io/api/v1/games?seasons[]=2023&team_ids[]=1`;
 
     async function getData(URL){
         try {
@@ -16,13 +17,17 @@ import { DOMSelectors } from "./dom";
     }
     getData(URL)
 
-    document.querySelector(".player").textContent = data.data[0].ast;
+    async function getData1(URL1){
+        try {
+            const response = await fetch(URL1);
+            console.log(response);
+            const data = await response.json();
+            console.log(data.data[0]);
+            document.querySelector("h3").textContent = data.data[0].home_team_score;
+            document.querySelector(".t2").textContent = data.data[0].visitor_team_score;
+        } catch (error) {
 
-
-DOMSelectors.plyrinput.addEventListener("submit", function (event) {
-    event.preventDefault();
-   DOMSelectors.plyrinput.insertAdjacentHTML(
-        "beforeend", `<div class="player">LeBron James</div>`
-    )
-})
+        }
+    }
+    getData1(URL1)
 

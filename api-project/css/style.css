@@ -77,3 +77,26 @@ img {
   width: auto;
   height: 10.5rem;
 }
+
+.scorecard {
+  background-color: whitesmoke;
+  border: 0.3rem solid black;
+  border-radius: 30px;
+  width: 30rem;
+  height: 40vh;
+  padding: 0%;
+  margin: 1rem;
+  align-items: center;
+  transition: all 0.3s;
+  display: flex;
+  overflow: hidden;
+}
+
+.team1img, .team2img{
+  scale: 0.7;
+}
+
+.column {
+  flex: 50%;
+  padding: 10px;
+}
