@@ -31,3 +31,4 @@ import { DOMSelectors } from "./dom";
     }
     getData1(URL1)
 
+const player = document.querySelector(".player").textContent
