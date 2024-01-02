@@ -23,6 +23,7 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
+  background-color: aliceblue;
 }
 
 h1 {
@@ -55,7 +56,6 @@ h1 {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; 
   backface-visibility: hidden;
 }
 
@@ -103,4 +103,10 @@ img {
 
 h3 {
   text-align: center;
+}
+
+.form {
+  border: 0.2rem solid black;
+  text-align: center;
+  margin-left: 40vw;
 }

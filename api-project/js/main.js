@@ -1,7 +1,7 @@
 import { DOMSelectors } from "./dom";
 
     const URL = `https://www.balldontlie.io/api/v1/season_averages?season=2023&player_ids[]=237&player_ids[]=237`;
-    const URL1 = `https://www.balldontlie.io/api/v1/games?seasons[]=2023&team_ids[]=1`;
+    const URL1 = `https://www.balldontlie.io/api/v1/games?seasons[]=2023&team_ids[]=20`;
 
     async function getData(URL){
         try {
@@ -31,4 +31,3 @@ import { DOMSelectors } from "./dom";
     }
     getData1(URL1)
 
-const player = document.querySelector(".player").textContent
