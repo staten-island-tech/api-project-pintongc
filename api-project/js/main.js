@@ -30,4 +30,3 @@ import { DOMSelectors } from "./dom";
         }
     }
     getData1(URL1)
-
