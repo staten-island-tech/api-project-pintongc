@@ -1,6 +1,6 @@
 import { DOMSelectors } from "./dom";
 
-    const URL = `https://www.balldontlie.io/api/v1/season_averages?season=2023&player_ids[]=237&player_ids[]=237`;
+    const URL = `https://www.balldontlie.io/api/v1/season_averages?season=2023&player_ids[]=&player_ids[]=237`;
     const URL1 = `https://www.balldontlie.io/api/v1/games?seasons[]=2023&team_ids[]=20`;
 
     async function getData(URL){

@@ -113,3 +113,10 @@ h3 {
   text-align: center;
   margin: auto;
 }
+
+.btn {
+  scale: 1.5;
+  margin: 8rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
