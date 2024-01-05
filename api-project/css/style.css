@@ -63,6 +63,7 @@ h1 {
 .flip-card-front {
   background-color: white;
   border: 5px black solid;
+  border-radius: 30px;
   color: black;
   overflow: hidden;
   margin: auto;
@@ -74,6 +75,7 @@ h1 {
   transform: rotateY(180deg);
   font-size: smaller;
   border: 5px black solid;
+  border-radius: 30px;
 
 }
 
@@ -109,7 +111,7 @@ h3 {
 }
 
 .form {
-  border: 0.2rem solid black;
+  border: 0.1rem solid black;
   text-align: center;
   margin: auto;
 }
