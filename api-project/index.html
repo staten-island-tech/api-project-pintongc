@@ -5,80 +5,227 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NBA's Top Players</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">  
   <link rel="stylesheet" href="/css/style.css">
-  <title>League </title>
 </head>
 
 <body>
+  <header class="header-container">
+    <h1 class="animation">NBA Stats Finder</h1>
+  </header>
+  <form class="form" action="" id="form">
+    <label for="playerName">Enter Player Name</label>
+    <input type="text" name="playerName" class="player-name" id="playerName" placeholder="Enter Player Name">
+    <input class="submit" type="submit" value="Search" id="submit">
+  </form>
 
-  <div id="app"></div>
-  <div class="stat-table">
-    <div class="player"></div>
-    <form class="form" action="" id="form">
-      <label for="firstName">Enter Player Name</label>
-      <input type="text" name="firstName" class="player-name">
-      <input type="submit" value="click" id="submit">
-    </form>
+  <nav class="gallery">
+    <table>
+      <tr>
+        <th class="player-column">Player</th>
+        <th>PPG</th>
+        <th>APG</th>
+        <th>RPG</th>
+        <th>TO</th>
+        <th>PF</th>
+        <th>BLK</th>
+        <th>STL</th>
+        <th>FG%</th>
+        <th>3P%</th>
+        <th>FT%</th>
+      </tr>
+    </table>
+  </nav>
 
-    <div class="buttons">
-      <button class="btn">Steals</button>
-      <button class="btn">Points</button>
-      <button class="btn">Rebounds</button>
-      <button class="btn">Blocks</button>
-      <button class="btn">Assists</button>
+  <button class="clear-btn">Clear</button>
+
+  <main class="flex-container">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <div class="player-image"><img class="player-pic"
+              src="https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1966.png&w=350&h=254"
+              alt="Picture of Lebron James"></div>
+          <div class="player-name">Lebron James</div>
+        </div>
+        <div class="flip-card-back">
+          <p>PPG:</p>
+          <h1></h1>
+          <p>APG:</p>
+          <h2></h2>
+          <p>RPG:</p>
+          <h3></h3>
+        </div>
       </div>
-
-<div class="gallery">
-  <div class="flip-card">
-    <div class="flip-card-inner">
-     <div class="flip-card-front">
-      <div class="player-image"><img class="player-pic"
-          src="https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1966.png&w=350&h=254" alt=""></div>
-      <div class="player-name">Lebron James</div>
     </div>
-    <div class="flip-card-back">
-      <p>PPG:</p><h1></h1>
-      <p>APG:</p><h2></h2>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <div class="player-image"><img class="player-pic"
+              src="https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3112335.png&w=350&h=254"
+              alt="Picture of Nikola Jokic"></div>
+          <div class="player-name">Nikola Jokic</div>
+        </div>
+        <div class="flip-card-back">
+          <p>PPG:</p>
+          <h1></h1>
+          <p>APG:</p>
+          <h2></h2>
+          <p>RPG:</p>
+          <h3></h3>
+        </div>
       </div>
     </div>
-  </div>    
-</div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <div class="player-image"><img class="player-pic"
+              src="https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3032977.png&w=350&h=254"
+              alt="Picture of Giannis Antetokounmpo"></div>
+          <div class="player-name">Giannis Antetokounmpo</div>
+        </div>
+        <div class="flip-card-back">
+          <p>PPG:</p>
+          <h1></h1>
+          <p>APG:</p>
+          <h2></h2>
+          <p>RPG:</p>
+          <h3></h3>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <div class="player-image"><img class="player-pic"
+              src="https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3059318.png&w=350&h=254"
+              alt="Picture of Joel Embiid"></div>
+          <div class="player-name">Joel Embiid</div>
+        </div>
+        <div class="flip-card-back">
+          <p>PPG:</p>
+          <h1></h1>
+          <p>APG:</p>
+          <h2></h2>
+          <p>RPG:</p>
+          <h3></h3>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <div class="player-image"><img class="player-pic"
+              src="https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3945274.png&w=350&h=254"
+              alt="Picture of Luka Doncic"></div>
+          <div class="player-name">Luka Doncic</div>
+        </div>
+        <div class="flip-card-back">
+          <p>PPG:</p>
+          <h1></h1>
+          <p>APG:</p>
+          <h2></h2>
+          <p>RPG:</p>
+          <h3></h3>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <div class="player-image"><img class="player-pic"
+              src="https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3975.png&w=350&h=254"
+              alt="Picture of Stephen Curry"></div>
+          <div class="player-name">Stephen Curry</div>
+        </div>
+        <div class="flip-card-back">
+          <p>PPG:</p>
+          <h1></h1>
+          <p>APG:</p>
+          <h2></h2>
+          <p>RPG:</p>
+          <h3></h3>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <div class="player-image"><img class="player-pic"
+              src="https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4065648.png&w=350&h=254"
+              alt="Picture of Jayson Tatum"></div>
+          <div class="player-name">Jayson Tatum</div>
+        </div>
+        <div class="flip-card-back">
+          <p>PPG:</p>
+          <h1></h1>
+          <p>APG:</p>
+          <h2></h2>
+          <p>RPG:</p>
+          <h3></h3>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <div class="player-image"><img class="player-pic"
+              src="https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3202.png&w=350&h=254"
+              alt="Picture of Kevin Durant"></div>
+          <div class="player-name">Kevin Durant</div>
+        </div>
+        <div class="flip-card-back">
+          <p>PPG:</p>
+          <h1></h1>
+          <p>APG:</p>
+          <h2></h2>
+          <p>RPG:</p>
+          <h3></h3>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <div class="player-image"><img class="player-pic"
+              src="https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3136193.png&w=350&h=254"
+              alt="Picture of Devin Booker"></div>
+          <div class="player-name">Devin Booker</div>
+        </div>
+        <div class="flip-card-back">
+          <p>PPG:</p>
+          <h1></h1>
+          <p>APG:</p>
+          <h2></h2>
+          <p>RPG:</p>
+          <h3></h3>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <div class="player-image"><img class="player-pic"
+              src="https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4278073.png&w=350&h=254"
+              alt="Picture of Shai Gilgeous-Alexander"></div>
+          <div class="player-name">Shai Gilgeous-Alexander</div>
+        </div>
+        <div class="flip-card-back">
+          <p>PPG:</p>
+          <h1></h1>
+          <p>APG:</p>
+          <h2></h2>
+          <p>RPG:</p>
+          <h3></h3>
+        </div>
+      </div>
+    </div>
+  </main>
 
-<div class="scorecard">
-  <div class="column"><h3></h3>  <div><img class="team1img" src="https://banner2.cleanpng.com/20180531/pcj/kisspng-atlanta-hawks-philips-arena-cleveland-cavaliers-nb-hawk-5b1028fa4b6f02.661879511527785722309.jpg" alt=""></div></div>
-
- <div class="column">  <h3 class="t2"></h3> <div class="team-2img"><img class="team2img" src="https://th.bing.com/th/id/R.6e17c3910cb1ae53073a093f14a1fed2?rik=8iWCHUe4th%2f3ig&pid=ImgRaw&r=0" alt="" srcset=""></div></div> 
-
-  <div class="score">
-
-
-  </div>
-</div>
-<div class="select">
-    <label for="szn">Choose a Season:</label>
-    <select name="szn" id="szns">
-      <option value="2023">2022-2023</option>
-      <option value="2022">2021-2022</option>
-      <option value="2021">2020-2021</option>
-      <option value="2020">2019-2020</option>
-    </select>
-    <label for="dog-names">Choose a Team:</label>
-    <select name="dog-names" id="dog-names">
-      <option value="rigatoni">Atlanta Hawks</option>
-      <option value="dave">Boston Celtics</option>
-      <option value="pumpernickel">Los Angeles Clippers</option>
-      <option value="reeses">Los Angeles Lakers</option>
-  </div>
-  </div>
-  </div>
   <script type="module" src="/js/main.js"></script>
 </body>
 
 </html>
-
-<!-- league leaders in each stat
-card player img left
-selected stat in h2
-rest stats in h4
-relevant stats added
-select certian player  -->

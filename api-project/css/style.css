@@ -1,124 +1,172 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  margin: 0px;
-  padding: 0px;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
   margin: 0;
-  background-color: aliceblue;
+  background-color: #E47041;
+  font-family: 'Lato', sans-serif;
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: 1.25rem;
+}
+
+h2,
+h3 {
+  font-size: 1rem;
 }
 
 .flip-card {
-  background-color: transparent;
-  width: 300px;
-  height: 200px;
-  border: 1px solid #f1f1f1;
-  perspective: 1000px;
+  width: 18rem;
+  height: 16rem;
   margin: auto;
+  perspective: 100rem;
+  margin-bottom: 5rem;
+  margin-top: 2rem;
 }
 
 .flip-card-inner {
-  position: relative;
   width: 100%;
   height: 100%;
   text-align: center;
-  transition: transform 0.8s;
+  transition: transform 0.75s;
   transform-style: preserve-3d;
-  margin: auto;
 }
 
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  margin: auto;
-}
-
-.flip-card-front {
   background-color: white;
+  color: black;
   border: 5px black solid;
   border-radius: 30px;
-  color: black;
-  overflow: hidden;
   margin: auto;
+  overflow: hidden;
 }
 
 .flip-card-back {
-  background-color: white;
-  color: black;
   transform: rotateY(180deg);
-  font-size: smaller;
-  border: 5px black solid;
-  border-radius: 30px;
-
 }
 
 img {
   width: auto;
-  height: 10.5rem;
-}
-
-.scorecard {
-  background-color: whitesmoke;
-  border: 0.3rem solid black;
-  border-radius: 30px;
-  width: 29rem;
-  height: 30vh;
-  padding: 0%;
-  margin: auto;
-  margin-top: 1rem;
-  display: flex;
-  overflow: hidden;
-}
-
-.team1img, .team2img{
-  scale: 0.7;
-}
-
-.column {
-  flex: 50%;
-  padding: 10px;
-}
-
-h3 {
-  text-align: center;
+  height: 13rem;
 }
 
 .form {
-  border: 0.1rem solid black;
   text-align: center;
   margin: auto;
 }
 
-.btn {
+table {
+  margin: auto;
+  border: 2px solid black;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: white;
+}
+
+th {
+  padding-right: 2rem;
+  border: 1px solid gray;
+}
+
+.player-column {
+  padding-right: 7rem;
+}
+
+td {
+  border: 1px solid gray;
+}
+
+input {
+  text-transform: capitalize;
+  background-color: white;
+  color: black;
+}
+
+.playerclmn {
+  text-transform: capitalize;
+}
+
+.clear-btn {
+  display: block;
+  margin: auto;
+  margin-top: 2rem;
   scale: 1.5;
-  margin: 8rem;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: white;
+  color: #161616;
+}
+
+.submit {
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: white;
+  color: #161616;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  padding: 0px;
+}
+
+@media screen and (max-width:1200px) {
+  .card {
+    width: 20vw;
+  }
+}
+
+@media screen and (max-width:800px) {
+  .card {
+    width: 100vw;
+  }
+}
+
+.header-container {
+  margin-bottom: 3vh;
+  text-align: center;
+  border-bottom: 5px solid black;
+  padding: 2.5rem 10rem;
+  background-color: #E47041;
+  position: relative;
+}
+
+.animation {
+  font-size: 5rem;
+  text-shadow: 0.25rem 0.15rem 0.1rem lightslategray;
+  animation: animation, bounce;
+  animation-duration: 3s, 1.8s;
+  animation-delay: 150ms, 3s;
+  animation-iteration-count: 1, infinite;
+  animation-timing-function: ease, ease-in-out;
+}
+
+@keyframes animation {
+  0% {
+     transform: translateY(-16rem);
+  }
+ 100%{
+  transform: translateY(0rem);
+ }
+} 
+
+@keyframes bounce {
+0%{
+  transform: translateY(0rem);
+}
+50% {
+  transform: translateY(0.75rem);
+}
+100% {
+  transform: translateY(0rem);
+} 
 }
